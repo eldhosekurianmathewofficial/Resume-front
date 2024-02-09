@@ -3,7 +3,7 @@ import axios from "axios";
 const View = () => {
     const[output,setOutput]= new useState([])
     const getData=()=>{
-        axios.get("").then(
+        axios.get("http://localhost:3002/api/resume/viewall").then(
             (response)=>{
                 setOutput(response.data)
                 console.log(response.data)

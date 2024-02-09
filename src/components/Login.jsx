@@ -16,7 +16,7 @@ const Login = () => {
     const navigate=useNavigate()
     const readvalues=()=>{
         console.log(input)
-        axios.post("",input).then((response)=>{
+        axios.post("http://localhost:3002/api/registeration/login",input).then((response)=>{
             console.log(response.data)
             if(response.data.status==="success")
             {
