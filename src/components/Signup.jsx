@@ -17,7 +17,7 @@ const Signup = () => {
   const readValues = () => {
     console.log(input);
     axios
-      .post("", input)
+      .post("http://localhost:3002/api/registeration/signup", input)
       .then((response) => {
         console.log(response.data);
         if (response.data.status === "success") {
